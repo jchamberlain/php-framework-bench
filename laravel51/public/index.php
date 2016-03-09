@@ -1,5 +1,7 @@
 <?php
 
+define('START', microtime(true));
+
 /**
  * Laravel - A PHP Framework For Web Artisans
  *
