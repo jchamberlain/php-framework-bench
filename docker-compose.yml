@@ -1,0 +1,16 @@
+laravel:
+    build: ./laravel51
+lumen:
+    build: ./lumen52
+slim:
+    build: ./slim3
+nginx:
+    image: jchamberlain/nginx:latest
+    links:
+        - laravel
+        - lumen
+        - slim
+    ports:
+        - 8081:8081
+        - 8082:8082
+        - 8083:8083
