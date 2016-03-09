@@ -5,6 +5,7 @@ FROM debian:jessie
 # install the packages we need
 RUN apt-get update && apt-get install -y \
   curl \
+  git \
   php5 \
   php5-curl \
   php5-cli \
