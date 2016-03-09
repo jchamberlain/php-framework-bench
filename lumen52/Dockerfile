@@ -10,3 +10,4 @@ RUN chown -R www-data /var/www/
 WORKDIR /var/www/
 RUN composer install --no-dev
 RUN chown -R www-data /var/www/vendor
+RUN echo APP_KEY=r1NMTCJ8AfEPRCNtHHKOBGiExOwFjcrK > .env
